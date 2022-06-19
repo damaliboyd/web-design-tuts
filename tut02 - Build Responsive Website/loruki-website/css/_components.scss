@@ -1,7 +1,7 @@
 /* Navbar */
 .navbar {
     background-color: $primary-color;
-    color: $primary-text;
+    color: $light-text;
     height: 70px;
 
     .flex {
@@ -18,7 +18,7 @@
         margin: 0 5px;
         
         &:hover{
-            border-bottom: 2px $primary-text solid;
+            border-bottom: 2px $light-text solid;
         }
         
     }
@@ -28,7 +28,7 @@
 .showcase{
     height: 425px;
     background-color: $primary-color;
-    color: $primary-text;
+    color: $light-text;
     position: relative;
 
     &::before, &::after{
@@ -92,4 +92,79 @@
 /* Stats */
 .stats{
     padding-top:115px;
+
+    .grid h3{
+        font-size: 35px;
+    }
+
+    .grid p{
+        font-size:20px;
+        font-weight: bold;
+    }
+}
+
+.stats-heading{
+    max-width: 500px;
+    margin: auto;
+}
+
+/*Cli*/
+.cli{
+    .grid > *:first-child{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2 ;
+    }
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr)
+    }
+}
+
+/* Clouds */
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+.languages{
+    .card {
+        text-align: center;
+        margin:18px 10px 40px;
+        transition: transform 0.2s ease-in;
+        
+        h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &:hover{
+            transform: translateY(-15px);
+        }
+    }
+    .flex {
+        flex-wrap:wrap;
+    }
+    
+}
+
+/* Footer */
+.footer .social a{
+    margin: 0 10px;
+}
+
+/* Tablets and Under*/
+@media(max-width: 768px){
+    
+}
+
+/* Mobile*/
+@media(max-width: 500px){
+    .navbar {
+        height: 110px;
+        .flex{
+            flex-direction:column;
+        }
+        ul{
+            padding: 10px;
+        }
+    }
 }

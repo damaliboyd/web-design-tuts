@@ -52,8 +52,47 @@
 .btn-outline{
     background-color: transparent;
     border: 1px white solid;
+    a{color: $light-text}
 }
 
+/* Backgrounds & Colored Buttons*/
+.bg-primary, .btn-primary{
+    background-color: $primary-color;
+    color: $light-text;
+    a{color: $light-text}
+}
+.bg-secondary, .btn-secondary{
+    background-color: $secondary-color;
+    color: $light-text;
+    a{color: $light-text}
+}
+.bg-light, .btn-light{
+    background-color: $light-color;
+    color: $dark-text;
+    a{color: $dark-text}
+}
+.bg-dark, .btn-dark{
+    background-color: $dark-color;
+    color: $light-text;
+    a{color: $light-text}
+}
+
+/* Text sizes*/
+.lead{
+    font-size:20px;
+}
+.sm{
+    font-size: 1rem;
+}
+.md{
+    font-size: 2rem;
+}
+.lg{
+    font-size: 4rem;
+}
+.xl{
+    font-size: 3rem;
+}
 .text-center{
     text-align: center;
 }
@@ -123,4 +162,6 @@
 .py-5{
     padding: 4rem 0;
 }
+
+
 

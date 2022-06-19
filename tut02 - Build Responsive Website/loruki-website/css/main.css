@@ -53,6 +53,63 @@
   background-color: transparent;
   border: 1px white solid;
 }
+.btn-outline a {
+  color: #fff;
+}
+
+/* Backgrounds & Colored Buttons*/
+.bg-primary, .btn-primary {
+  background-color: #0f7aed;
+  color: #fff;
+}
+.bg-primary a, .btn-primary a {
+  color: #fff;
+}
+
+.bg-secondary, .btn-secondary {
+  background-color: #1c3fa8;
+  color: #fff;
+}
+.bg-secondary a, .btn-secondary a {
+  color: #fff;
+}
+
+.bg-light, .btn-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+.bg-light a, .btn-light a {
+  color: #333;
+}
+
+.bg-dark, .btn-dark {
+  background-color: #002240;
+  color: #fff;
+}
+.bg-dark a, .btn-dark a {
+  color: #fff;
+}
+
+/* Text sizes*/
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 4rem;
+}
+
+.xl {
+  font-size: 3rem;
+}
 
 .text-center {
   text-align: center;
@@ -251,4 +308,67 @@ img {
 /* Stats */
 .stats {
   padding-top: 115px;
+}
+.stats .grid h3 {
+  font-size: 35px;
+}
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+/*Cli*/
+.cli .grid > *:first-child {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* Clouds */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+/* Footer */
+.footer .social a {
+  margin: 0 10px;
+}
+
+/* Tablets and Under*/
+/* Mobile*/
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
