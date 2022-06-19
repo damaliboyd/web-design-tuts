@@ -1,0 +1,95 @@
+/* Navbar */
+.navbar {
+    background-color: $primary-color;
+    color: $primary-text;
+    height: 70px;
+
+    .flex {
+        justify-content: space-between;
+    }
+
+    ul{
+        display:flex;
+    }
+
+    a {
+        color:white;
+        padding: 10px;
+        margin: 0 5px;
+        
+        &:hover{
+            border-bottom: 2px $primary-text solid;
+        }
+        
+    }
+}
+
+/* Showcase */
+.showcase{
+    height: 425px;
+    background-color: $primary-color;
+    color: $primary-text;
+    position: relative;
+
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        height: 115px;
+        bottom: -70px;
+        right: 0;
+        left: 0;
+        background-color: white;
+        transform: skewY(-2deg);
+        -webkit-transform: skewY(-2deg);
+        -moz-transform: skewY(-2deg);
+        -ms-transform: skewY(-2deg);
+        
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p{
+        margin: 20px 0;
+    }
+
+    .grid{
+        grid-template-columns: 55% 45%;
+        gap: 30px;
+        overflow: visible;
+    }
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    width: 400px;
+    z-index: 100;
+
+    .form-control{
+        margin: 30px 0;
+    }
+
+    label{
+        font-size: 16px;
+    }
+
+    input[type="text"], input[type="email"]{
+        border: none;
+        background: rgba(180, 190, 203, .15);
+        border-bottom: 1px solid rgba(180, 190, 203, .5);
+        width: 100%;
+        padding: 3px;
+        font-size: 16px;
+
+        &:focus{
+            outline:none;
+        }
+    }
+}
+
+/* Stats */
+.stats{
+    padding-top:115px;
+}
