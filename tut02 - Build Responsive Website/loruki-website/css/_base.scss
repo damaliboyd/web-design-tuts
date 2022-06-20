@@ -31,3 +31,8 @@ img{
     width: 100%;
 }
 
+code, pre{
+    background: $dark-text;
+    color: $light-text;
+    padding: 10px;
+}

@@ -69,12 +69,25 @@
 .bg-light, .btn-light{
     background-color: $light-color;
     color: $dark-text;
-    a{color: $dark-text}
 }
 .bg-dark, .btn-dark{
     background-color: $dark-color;
     color: $light-text;
     a{color: $light-text}
+}
+
+/* Text Colors*/
+.text-primary{
+    color: $primary-color;
+}
+.text-secondary{
+    color: $secondary-color;
+}
+.text-light{
+    color: $light-color;
+}
+.text-dark{
+    color: $dark-color;
 }
 
 /* Text sizes*/
@@ -163,5 +176,23 @@
     padding: 4rem 0;
 }
 
+/* Alerts */
+.alert{
+    background-color: $light-color;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-weight: bold;
+    i{
+        margin-right:10px;
+    }
+}
 
+.alert-success{
+    background-color: $success-color;
+    color: $light-color;
+}
 
+.alert-error{
+    background-color: $error-color;
+    color: $light-color;
+}
